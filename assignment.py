@@ -1,0 +1,1 @@
+#python program that allows user enter a random number and check whether number is even or odd
