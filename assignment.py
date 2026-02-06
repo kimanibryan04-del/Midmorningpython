@@ -1,1 +1,10 @@
-#python program that allows user enter a random number and check whether number is even or odd
+
+number = int(input("Enter a number: "))
+
+
+if number  == 0:
+    print("The number is neutral.")
+elif number % 2 == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.")
