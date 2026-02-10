@@ -1,3 +1,28 @@
-#write a simple calculator program when the program runs,
-# it prompts the user to enter first number,and second number based on the operator
-# entered it should provide the correct output.operators(+,-,*,/)
+# user input
+num1 = float(input("Enter first number: "))
+operator = input("Enter operator (+, -, *, /): ")
+num2 = float(input("Enter second number: "))
+
+
+if operator == "+":
+    result = num1 + num2
+    print(f"Result: {num1} + {num2} = {result}")
+
+elif operator == "-":
+    result = num1 - num2
+    print(f"Result: {num1} - {num2} = {result}")
+
+elif operator == "*":
+    result = num1 * num2
+    print(f"Result: {num1} * {num2} = {result}")
+
+elif operator == "/":
+
+    if num2 != 0:
+        result = num1 / num2
+        print(f"Result: {num1} / {num2} = {result}")
+    else:
+        print("Math Error.")
+
+else:
+    print("Invalid operator! Please use +, -, *, or /.")
